@@ -1,7 +1,7 @@
 {
-  "name": "react-hover-menu",
+  "name": "react-parabola",
   "version": "1.0.3",
-  "description": "react hover or click menu component",
+  "description": "A collection of animation effects component",
   "main": "dist/bundle.js",
   "files": [
     "dist"
@@ -14,7 +14,6 @@
   "author": "lulujiang",
   "license": "ISC",
   "dependencies": {
-    "antd": "^3.10.5",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.6.1"
