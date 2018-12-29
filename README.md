@@ -23,9 +23,7 @@ render() {
 ```
 
 1. element - 获取点击收藏的事件对象
-
 2. fadeOut - 挂载或卸载 `react-parabola` 组件的函数
-
-3. ballInfo : { ballsTarge t: { sx : , sy : } - 目标位置坐标, curvature - 曲率}
+3. ballInfo : { `ballsTarget: { sx : , sy : }` - 目标位置坐标, `curvature` - 曲率}
 
 
