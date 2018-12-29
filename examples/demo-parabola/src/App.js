@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './index.css'
-import Active from 'react-parabola'
+import Active from 'react-parabola-animation'
 
 require('./font.js')
 
