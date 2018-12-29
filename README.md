@@ -2,7 +2,7 @@
 
 ## Install
 
-```
+```sh
 npm i react-parabola
 ```
 
