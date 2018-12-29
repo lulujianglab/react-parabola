@@ -8,7 +8,7 @@ npm i react-parabola
 
 ## Usage
 
-```
+```js
 import Active from 'react-parabola'
 
 render() {
