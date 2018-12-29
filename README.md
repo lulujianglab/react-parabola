@@ -3,13 +3,13 @@
 ## Install
 
 ```sh
-npm i react-parabola
+npm i react-parabola-animation
 ```
 
 ## Usage
 
 ```js
-import Active from 'react-parabola'
+import Active from 'react-parabola-animation'
 
 render() {
   // ......
@@ -23,7 +23,7 @@ render() {
 ```
 
 1. element - 获取点击收藏的事件对象
-2. fadeOut - 挂载或卸载 `react-parabola` 组件的函数
-3. ballInfo : { `ballsTarget: { sx : , sy : }` - 目标位置坐标, `curvature` - 曲率 }
+2. fadeOut - 挂载或卸载 `react-parabola-animation` 组件的函数
+3. ballInfo : { `ballsTarget: { sx - X轴 , sy - Y轴 }` - 目标位置坐标, `curvature` - 运动抛物线曲率 }
 
 
