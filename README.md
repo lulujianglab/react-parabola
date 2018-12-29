@@ -1,24 +1,31 @@
-**Create a three-level menu component of front-end React to support mouse hover and mouse click expiration menu**
+**Create a collection of animation effects component**
 
 ## Install
 
 ```
-npm i react-hover-menu
+npm i react-parabola
 ```
 
 ## Usage
 
 ```
-import HoverMenu from 'react-hover-menu'
+import Active from 'react-parabola'
 
 render() {
+  // ......
   return (
     <div className="App">
-        <HoverMenu title={'悬浮呼出菜单'} menu={menuData}></HoverMenu>
-        <HoverMenu title={'点击呼出菜单'} menu={menuData} trigger={'click'}></HoverMenu>
+      // ......
+      <Active element={e} fadeOut={this.handleFadeOut} {...ballInfo} />
     </div>
   )
 }
-
 ```
+
+1. element - 获取点击收藏的事件对象
+
+2. fadeOut - 挂载或卸载 `react-parabola` 组件函数
+
+3. ballInfo : { ballsTarge t: { sx : , sy : } - 目标位置坐标, curvature - 曲率}
+
 
