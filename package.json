@@ -1,6 +1,6 @@
 {
   "name": "react-parabola",
-  "version": "1.0.3",
+  "version": "0.0.1",
   "description": "A collection of animation effects component",
   "main": "dist/bundle.js",
   "files": [

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-// import menuData from './menuData.json'
+import React, { Component } from 'react'
 import './index.css'
 import Active from 'react-parabola'
 
@@ -60,7 +59,6 @@ class App extends Component {
         <ul className="list">
           {
             arr.map((item, index) => {
-              console.log('item',item)
               return (
                 <li key={item} className="item">
                   <svg className="icon" aria-hidden="true" index={index} onClick={this.onclickIcon}>

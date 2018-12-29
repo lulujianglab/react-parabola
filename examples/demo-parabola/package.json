@@ -1,9 +1,8 @@
 {
-  "name": "demo-menu",
-  "version": "0.1.0",
+  "name": "demo-parabola",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "antd": "^3.10.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0",
