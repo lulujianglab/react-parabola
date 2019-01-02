@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import './index.css'
 import Active from 'react-parabola-animation'
+import { CSSTransition } from 'react-transition-group'
+import './index.css'
 
 require('./font.js')
 
@@ -57,18 +58,24 @@ class App extends Component {
     return (
       <div className="App">
         <ul className="list">
-          {
-            arr.map((item, index) => {
-              return (
-                <li key={item} className="item">
-                  <svg className="icon" aria-hidden="true" index={index} onClick={this.onclickIcon}>
-                    <use xlinkHref={valueArr.indexOf(index) === -1? "#icon-wujiaoxing" : "#icon-wujiaoxing1"} />
-                  </svg>
-                </li>
-              )
-            })
-          }
-        </ul>
+          {/* <TransitionGroup className="list"> */}
+            {
+              arr.map((item, index) => {
+                return (
+                    <svg key={item} className="icon" aria-hidden="true" index={index} onClick={this.onclickIcon}>
+                      <CSSTransition 
+                        in={showBall}
+                        timeout={500} 
+                        classNames="fade"
+                      >
+                        <use xlinkHref={valueArr.indexOf(index) === -1? "#icon-wujiaoxing" : "#icon-wujiaoxing1"} />
+                      </CSSTransition>
+                    </svg>
+                )
+              })
+            }
+          </ul>
+        {/* </ul> */}
         <div className="box" />
         {showBall?
           <Active element={e} fadeOut={this.handleFadeOut} {...ballInfo} />
